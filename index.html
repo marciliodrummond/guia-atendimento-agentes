@@ -147,6 +147,39 @@ body{overflow-x:hidden;touch-action:manipulation;-webkit-tap-highlight-color:rgb
   <link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">  <!-- /SI mandatory assets -->
 <style id="si-ai-agentic-style">
+
+
+/* SI sector examples styles start */
+.si-sector-examples,
+.si-sector-examples *{box-sizing:border-box}
+.si-sector-examples{position:relative;overflow:hidden;padding:clamp(56px,8vw,92px) 0;background:
+radial-gradient(circle at 14% 0%,rgba(45,212,191,.14),transparent 28%),
+linear-gradient(180deg,rgba(8,13,18,.96),rgba(13,18,24,.98));color:#f7f3e8}
+.si-sector-examples::before{content:"";position:absolute;inset:0;background-image:
+linear-gradient(90deg,rgba(255,255,255,.045) 1px,transparent 1px),
+linear-gradient(180deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:48px 48px;mask-image:linear-gradient(180deg,rgba(0,0,0,.45),transparent 70%);pointer-events:none}
+.si-sector-wrap{position:relative;z-index:1;width:min(1120px,calc(100% - 32px));margin:0 auto}
+.si-sector-kicker{display:inline-flex;align-items:center;gap:8px;margin:0 0 12px;padding:7px 10px;border:1px solid rgba(212,175,55,.42);border-radius:999px;color:#e8c766;background:rgba(212,175,55,.08);font:700 11px/1.1 Inter,system-ui,sans-serif;text-transform:uppercase;letter-spacing:.08em}
+.si-sector-title{max-width:900px;margin:0;color:#fff;font:800 clamp(28px,4vw,48px)/1.04 Inter,system-ui,sans-serif;letter-spacing:0}
+.si-sector-lead{max-width:860px;margin:18px 0 0;color:rgba(247,243,232,.78);font:400 clamp(16px,2vw,19px)/1.62 Inter,system-ui,sans-serif}
+.si-sector-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:28px}
+.si-sector-card{min-width:0;display:flex;flex-direction:column;gap:16px;padding:20px;border:1px solid rgba(255,255,255,.12);border-radius:8px;background:linear-gradient(180deg,rgba(255,255,255,.075),rgba(255,255,255,.035));box-shadow:0 22px 58px rgba(0,0,0,.28);overflow:hidden}
+.si-sector-card-head{display:flex;align-items:flex-start;justify-content:space-between;gap:14px}
+.si-sector-badge{flex:0 0 auto;display:grid;place-items:center;width:38px;height:38px;border-radius:8px;border:1px solid rgba(45,212,191,.36);background:rgba(45,212,191,.11);color:#7ee7d8;font:800 14px/1 Inter,system-ui,sans-serif}
+.si-sector-card h3{margin:0;color:#fff;font:800 21px/1.15 Inter,system-ui,sans-serif;letter-spacing:0}
+.si-sector-tag{display:inline-flex;align-items:center;white-space:nowrap;border:1px solid rgba(212,175,55,.36);border-radius:999px;padding:6px 8px;color:#f1d680;background:rgba(212,175,55,.08);font:700 11px/1 Inter,system-ui,sans-serif}
+.si-sector-label{margin:0 0 6px;color:#e8c766;font:800 11px/1 Inter,system-ui,sans-serif;text-transform:uppercase;letter-spacing:.06em}
+.si-sector-copy{margin:0;color:rgba(247,243,232,.82);font:400 15px/1.58 Inter,system-ui,sans-serif;overflow-wrap:anywhere}
+.si-sector-flow{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.si-sector-step{position:relative;min-width:0;padding:12px 10px;border-radius:8px;border:1px solid rgba(255,255,255,.1);background:rgba(2,6,12,.36);color:rgba(247,243,232,.86);font:700 13px/1.25 Inter,system-ui,sans-serif;text-align:center;overflow-wrap:anywhere}
+.si-sector-step span{display:block;margin-bottom:5px;color:#7ee7d8;font:800 10px/1 Inter,system-ui,sans-serif;text-transform:uppercase;letter-spacing:.06em}
+.si-sector-outcome{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:auto}
+.si-sector-outcome>div{min-width:0;padding:13px;border-radius:8px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.045)}
+.si-sector-note{margin-top:18px;padding:16px 18px;border:1px solid rgba(45,212,191,.25);border-radius:8px;background:rgba(45,212,191,.07);color:rgba(247,243,232,.82);font:700 14px/1.5 Inter,system-ui,sans-serif}
+@media (max-width:860px){.si-sector-grid{grid-template-columns:1fr}.si-sector-outcome{grid-template-columns:1fr}.si-sector-card{padding:18px}.si-sector-title{font-size:clamp(27px,8vw,40px)}}
+@media (max-width:560px){.si-sector-wrap{width:min(100% - 24px,1120px)}.si-sector-examples{padding:48px 0}.si-sector-card-head{display:grid;grid-template-columns:auto 1fr}.si-sector-tag{grid-column:1/-1;justify-content:center;white-space:normal;text-align:center}.si-sector-flow{grid-template-columns:1fr}.si-sector-step{text-align:left}.si-sector-card h3{font-size:20px}}
+/* SI sector examples styles end */
+
 /* SI solutions lab styles start */
 .skip-link:focus:not(:focus-visible){transform:translateY(-180%)!important}
 .si-solutions-lab{position:relative;z-index:2;margin:34px auto 48px;width:min(100% - 32px,1120px);border:1px solid rgba(226,192,116,.24);border-radius:8px;background:linear-gradient(135deg,rgba(9,13,18,.97),rgba(18,23,27,.95));box-shadow:0 26px 74px rgba(0,0,0,.32);overflow:hidden}
@@ -300,6 +333,122 @@ body{overflow-x:hidden;touch-action:manipulation;-webkit-tap-highlight-color:rgb
   </div>
 </section>
 <!-- SI solutions lab end -->
+<!-- SI sector examples start -->
+<section class="si-sector-examples reveal" id="exemplos-praticos-por-segmento" aria-labelledby="sector-examples-title">
+  <div class="si-sector-wrap">
+    <p class="si-sector-kicker">Aplicações por segmento</p>
+    <h2 class="si-sector-title" id="sector-examples-title">Exemplos práticos: atendimento que vira contrato, consulta ou venda qualificada.</h2>
+    <p class="si-sector-lead">O ponto não é responder mais rápido. É transformar conversa solta em fluxo inteligente: contexto capturado, intenção entendida, prioridade definida e próxima ação sem depender de memória humana.</p>
+    <div class="si-sector-grid">
+<article class="si-sector-card">
+  <div class="si-sector-card-head">
+    <div class="si-sector-badge" aria-hidden="true">JU</div>
+    <div><h3>Lead jurídico sem vazamento</h3></div>
+    <span class="si-sector-tag">Jurídico</span>
+  </div>
+  <div>
+    <p class="si-sector-label">Cena real</p>
+    <p class="si-sector-copy">O escritório recebe mensagens de WhatsApp sobre trabalhista, previdenciário e contratos. Hoje parte dos dados fica perdida em áudio, print e conversa sem dono.</p>
+  </div>
+  <div class="si-sector-flow" aria-label="Fluxo visual com IA">
+    <div class="si-sector-step"><span>Entrada</span>WhatsApp, formulário e Instagram</div>
+    <div class="si-sector-step"><span>Agente</span>Agente qualifica área, urgência, documentos e fit</div>
+    <div class="si-sector-step"><span>Resultado</span>CRM com dono, prazo, roteiro e proposta</div>
+  </div>
+  <div class="si-sector-outcome">
+    <div>
+      <p class="si-sector-label">Ganho tangível</p>
+      <p class="si-sector-copy">Mais consultas qualificadas e menos tempo gasto com lead curioso, incompleto ou fora do perfil.</p>
+    </div>
+    <div>
+      <p class="si-sector-label">Piloto recomendado</p>
+      <p class="si-sector-copy">Agente SDR jurídico com triagem, resumo executivo e checklist automático para a primeira reunião.</p>
+    </div>
+  </div>
+</article>
+<article class="si-sector-card">
+  <div class="si-sector-card-head">
+    <div class="si-sector-badge" aria-hidden="true">CO</div>
+    <div><h3>Entrada de cliente com contexto financeiro</h3></div>
+    <span class="si-sector-tag">Contabilidade</span>
+  </div>
+  <div>
+    <p class="si-sector-label">Cena real</p>
+    <p class="si-sector-copy">Pedidos de abertura de empresa, troca de contador e dúvidas tributárias chegam misturados. A equipe demora para descobrir regime, faturamento e urgência real.</p>
+  </div>
+  <div class="si-sector-flow" aria-label="Fluxo visual com IA">
+    <div class="si-sector-step"><span>Entrada</span>Mensagem inicial e documentos</div>
+    <div class="si-sector-step"><span>Agente</span>Agente coleta porte, regime, dor e prazo</div>
+    <div class="si-sector-step"><span>Resultado</span>Proposta com escopo e risco de atendimento</div>
+  </div>
+  <div class="si-sector-outcome">
+    <div>
+      <p class="si-sector-label">Ganho tangível</p>
+      <p class="si-sector-copy">Propostas mais rápidas, menos retrabalho comercial e melhor separação entre lead barato e cliente com margem.</p>
+    </div>
+    <div>
+      <p class="si-sector-label">Piloto recomendado</p>
+      <p class="si-sector-copy">Formulário conversacional conectado ao CRM e checklist de documentos por tipo de serviço.</p>
+    </div>
+  </div>
+</article>
+<article class="si-sector-card">
+  <div class="si-sector-card-head">
+    <div class="si-sector-badge" aria-hidden="true">IM</div>
+    <div><h3>Interessado que chega pronto para visita</h3></div>
+    <span class="si-sector-tag">Imobiliária</span>
+  </div>
+  <div>
+    <p class="si-sector-label">Cena real</p>
+    <p class="si-sector-copy">Portais, Instagram e placas geram contatos, mas o corretor perde tempo perguntando renda, bairro, urgência e condição de financiamento.</p>
+  </div>
+  <div class="si-sector-flow" aria-label="Fluxo visual com IA">
+    <div class="si-sector-step"><span>Entrada</span>Lead do portal ou direct</div>
+    <div class="si-sector-step"><span>Agente</span>Agente cruza perfil, imóvel e agenda</div>
+    <div class="si-sector-step"><span>Resultado</span>Visita marcada com objeções já mapeadas</div>
+  </div>
+  <div class="si-sector-outcome">
+    <div>
+      <p class="si-sector-label">Ganho tangível</p>
+      <p class="si-sector-copy">Corretores priorizam interessados com real capacidade de compra ou locação.</p>
+    </div>
+    <div>
+      <p class="si-sector-label">Piloto recomendado</p>
+      <p class="si-sector-copy">Qualificador de leads imobiliários com agenda, alerta de documentação e resumo para o corretor.</p>
+    </div>
+  </div>
+</article>
+<article class="si-sector-card">
+  <div class="si-sector-card-head">
+    <div class="si-sector-badge" aria-hidden="true">SA</div>
+    <div><h3>Paciente orientado sem sobrecarregar recepção</h3></div>
+    <span class="si-sector-tag">Saúde</span>
+  </div>
+  <div>
+    <p class="si-sector-label">Cena real</p>
+    <p class="si-sector-copy">Pacientes perguntam preço, convênio, horários e preparo. A recepção responde repetidamente e ainda deixa escapar urgências e encaixes.</p>
+  </div>
+  <div class="si-sector-flow" aria-label="Fluxo visual com IA">
+    <div class="si-sector-step"><span>Entrada</span>WhatsApp e site</div>
+    <div class="si-sector-step"><span>Agente</span>Agente identifica especialidade, convênio e urgência</div>
+    <div class="si-sector-step"><span>Resultado</span>Agenda, orientação e confirmação</div>
+  </div>
+  <div class="si-sector-outcome">
+    <div>
+      <p class="si-sector-label">Ganho tangível</p>
+      <p class="si-sector-copy">Menos no-show, menos fila de mensagens e experiência mais segura antes da consulta.</p>
+    </div>
+    <div>
+      <p class="si-sector-label">Piloto recomendado</p>
+      <p class="si-sector-copy">Concierge de atendimento com regras de escalonamento e confirmação inteligente.</p>
+    </div>
+  </div>
+</article>
+    </div>
+    <div class="si-sector-note">A mesma arquitetura se adapta a consultorias, BPOs, educação, clínicas de estética e qualquer operação em que o primeiro contato decide a percepção de valor.</div>
+  </div>
+</section>
+<!-- SI sector examples end -->
 
 <section class="reveal" style="padding:0 0 24px;margin-top:-8px">
 <div class="wrap">
@@ -408,7 +557,7 @@ body{overflow-x:hidden;touch-action:manipulation;-webkit-tap-highlight-color:rgb
 </div></details></div></section>
 <section class="faq-section reveal" id="faq"><div class="wrap"><h2 class="faq-title">Perguntas que aparecem antes da mudança</h2><p class="faq-desc">A maioria das objeções não é sobre tecnologia. É sobre medo de complicar, perder tempo ou transformar atendimento humano em mensagem fria.</p><div class="faq-item" data-faq=""><div class="faq-q">Funciona para quem ainda atende tudo pelo WhatsApp?<span class="faq-arrow"><svg aria-hidden="true" focusable="false" viewbox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg></span></div><div class="faq-a"><div class="faq-a-inner">Sim. O WhatsApp pode continuar sendo o canal de conversa. O que muda é que ele deixa de ser a central de gestão. Cada conversa passa a ter registro, etapa, contexto, próximo passo e prazo.</div></div></div><div class="faq-item" data-faq=""><div class="faq-q">Preciso contratar um CRM caro para começar?<span class="faq-arrow"><svg aria-hidden="true" focusable="false" viewbox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg></span></div><div class="faq-a"><div class="faq-a-inner">Não. Primeiro vem o processo. Depois vem a ferramenta. Você pode começar com uma base simples, desde que ela tenha etapas, responsáveis e próximos passos claros.</div></div></div><div class="faq-item" data-faq=""><div class="faq-q">A IA não vai deixar o atendimento frio?<span class="faq-arrow"><svg aria-hidden="true" focusable="false" viewbox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg></span></div><div class="faq-a"><div class="faq-a-inner">A IA mal usada deixa frio. A IA bem aplicada aumenta contexto. Ela ajuda a lembrar o caso, classificar urgência, sugerir retorno e registrar prova. A decisão sensível continua humana.</div></div></div><div class="faq-item" data-faq=""><div class="faq-q">Isso serve para negócios fora da advocacia?<span class="faq-arrow"><svg aria-hidden="true" focusable="false" viewbox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg></span></div><div class="faq-a"><div class="faq-a-inner">Sim. Qualquer negócio de serviço que vende por conversa sofre com os mesmos vazamentos: clínicas, consultorias, contabilidades, agências, arquitetura, imobiliário e serviços B2B.</div></div></div><div class="faq-item" data-faq=""><div class="faq-q">Em quanto tempo aparecem os primeiros sinais de melhora?<span class="faq-arrow"><svg aria-hidden="true" focusable="false" viewbox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg></span></div><div class="faq-a"><div class="faq-a-inner">Os primeiros sinais costumam aparecer quando você centraliza oportunidades e define próximo passo para cada uma. O ganho maior vem depois, quando os dados começam a mostrar gargalos reais.</div></div></div></div></section>
 <section class="cta-final reveal"><div class="wrap"><h2>Antes de fechar a aba, olhe para o seu WhatsApp como um ativo.</h2><p>Se você percebeu que seu problema não é falta de esforço, mas falta de sistema, a Super Inteligênc[IA] pode ajudar sua operação a transformar atendimento, CRM, IA, dados e governança em uma arquitetura real de conversão.</p><a class="btn-primary btn-lg" href="https://wa.me/message/NSPS5ULND5FNP1" rel="noopener" target="_blank">Falar com a equipe</a></div></section>
-<section class="expert-section reveal" id="especialista"><div class="wrap"><div class="expert-card"><div class="expert-photo"><img src="marcilio-especialista.png" alt="Foto de Marcílio Guedes Drummond" loading="lazy" decoding="async"></div><div class="expert-info"><h2>Conheça o especialista</h2><p class="expert-bio"><strong>Marcílio Guedes Drummond</strong> é advogado com visão 360° de negócios, fundador da Super Inteligênc[IA] e especialista em IA, automação, gestão aplicada à advocacia e serviços. Atua na construção de arquiteturas inteligentes para transformar processos, reduzir risco e aumentar escala com segurança.</p><p class="expert-bio">É formado em Direito pela UFMG, tem formação em Design de Serviços e Produtos pelo MIT, é autor de livros sobre Inteligência Artificial e Direito, mentor do Sebrae e líder do Movimento Super Inteligênc[IA].</p><div class="expert-tags"><span class="expert-tag">Advogado &amp; Empresário</span><span class="expert-tag">Design de Serviços e Produtos · MIT</span><span class="expert-tag">IA aplicada a negócios de serviço</span><span class="expert-tag">Mentor Sebrae Nacional</span><span class="expert-tag">Super Inteligênc[IA]</span></div><div class="expert-stats"><span class="expert-stat">+460k audiência</span><span class="expert-stat">+170k no YouTube</span><span class="expert-stat">+100k clientes</span><span class="expert-stat">14 livros publicados</span><span class="expert-stat">+R$ 1,5 bi em valor gerado</span></div></div></div></div></section>
+<section class="expert-section reveal" id="especialista"><div class="wrap"><div class="expert-card"><div class="expert-photo"><img src="marcilio-especialista.png" alt="Foto de Marcílio Guedes Drummond" loading="lazy" decoding="async"></div><div class="expert-info"><h2>Conheça o especialista</h2><p class="expert-bio"><strong>Marcílio Guedes Drummond</strong> é advogado com visão 360° de negócios, fundador da Super Inteligênc[IA] e especialista em IA, automação, gestão aplicada à advocacia e serviços. Atua na construção de arquiteturas inteligentes para transformar processos, reduzir risco e aumentar escala com segurança.</p><p class="expert-bio">É formado em Direito pela UFMG, tem formação em Design de Serviços e Produtos pelo MIT, é autor de livros sobre Inteligência Artificial e Direito, mentor do Sebrae e líder do Movimento Super Inteligênc[IA].</p><div class="expert-tags"><span class="expert-tag">Advogado &amp; Empresário</span><span class="expert-tag">Design de Serviços e Produtos · MIT</span><span class="expert-tag">IA aplicada a negócios de serviço</span><span class="expert-tag">Mentor Sebrae Nacional</span><span class="expert-tag">Super Inteligênc[IA]</span></div><div class="expert-stats"><span class="expert-stat">+460k audiência</span><span class="expert-stat">+190k no YouTube</span><span class="expert-stat">+100k clientes</span><span class="expert-stat">14 livros publicados</span><span class="expert-stat">+R$ 1,5 bi em valor gerado</span></div></div></div></div></section>
 </main>
 <button aria-label="Voltar ao topo" class="scroll-top" id="scrollTop"><svg aria-hidden="true" focusable="false" viewbox="0 0 24 24"><polyline points="18 15 12 9 6 15"></polyline></svg></button>
 <footer class="site-footer si-fixed-footer" aria-label="Rodapé institucional">
@@ -465,9 +614,7 @@ body{overflow-x:hidden;touch-action:manipulation;-webkit-tap-highlight-color:rgb
       var vprog=$('#vprog'); if(vprog){var dots=$$('.vprog-dot',vprog);var vobs=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){dots.forEach(function(d){d.classList.toggle('active',d.dataset.section===e.target.id)})}})},{threshold:.2,rootMargin:'-90px 0px -60% 0px'});sections.forEach(function(id){var el=document.getElementById(id);if(el)vobs.observe(el)});window.addEventListener('scroll',function(){vprog.classList.toggle('show',window.scrollY>420)},{passive:true})}
       $$('.faq-item').forEach(function(item){var q=item.querySelector('.faq-q'), a=item.querySelector('.faq-a'); if(q&&a){q.addEventListener('click',function(){ $$('.faq-item.open').forEach(function(i){if(i!==item){i.classList.remove('open');var ia=i.querySelector('.faq-a');if(ia)ia.style.maxHeight='0'}}); item.classList.toggle('open'); if(item.classList.contains('open')){a.style.maxHeight=a.scrollHeight+48+'px'}else{a.style.maxHeight='0'}})}});
       var toastTimer=null; window.showToast=function(msg){var t=$('#toast'), m=$('#toastMsg'); if(!t||!m)return; m.textContent=msg; t.classList.add('show'); clearTimeout(toastTimer); toastTimer=setTimeout(function(){t.classList.remove('show')},3200)};
-      var milestones=[{pct:25,msg:'25% concluído — o vazamento ficou visível',fired:false},{pct:50,msg:'50% concluído — o funil vivo entrou no mapa',fired:false},{pct:75,msg:'75% concluído — dados e IA já estão conectados',fired:false},{pct:100,msg:'100% — Sistema C.O.N.T.R.A.T.O. completo',fired:false}];
-      window.addEventListener('scroll',function(){var h=document.body.scrollHeight-window.innerHeight;if(h<=0)return;var pct=Math.round(window.scrollY/h*100);milestones.forEach(function(m){if(!m.fired&&pct>=m.pct){m.fired=true;showToast(m.msg)}})},{passive:true});
-      function n(id){return parseFloat((document.getElementById(id)||{}).value)||0}
+function n(id){return parseFloat((document.getElementById(id)||{}).value)||0}
       function moeda(v){return 'R$ '+Math.round(v).toLocaleString('pt-BR')}
       var calcBtn=$('#calcBtn'); if(calcBtn){calcBtn.addEventListener('click',function(){var leads=n('leads'), propostas=n('propostas'), fechados=n('fechados'), ticket=n('ticket'); if(leads<=0||ticket<=0){alert('Preencha contatos recebidos e ticket médio.');return}var taxaProp=propostas/leads*100;var taxaFech=fechados/leads*100;var perda=Math.max(propostas-fechados,0)*ticket;var gargalo='Entrada';var cls='score-low';var texto='O maior risco está antes da proposta: muitos contatos não avançam para uma conversa qualificada.';if(taxaProp>=40&&taxaFech<15){gargalo='Conversão';texto='A proposta está chegando, mas não está fechando. Revise narrativa de valor, prova e follow-up.';cls='score-med'}if(taxaProp>=40&&taxaFech>=20){gargalo='Escala';texto='O funil tem sinais saudáveis. A prioridade é padronizar e escalar sem perder contexto.';cls='score-high'}var grid='<div class="result-item"><div class="ri-val">'+taxaProp.toFixed(1)+'%</div><div class="ri-label">Taxa de proposta</div></div><div class="result-item"><div class="ri-val">'+taxaFech.toFixed(1)+'%</div><div class="ri-label">Taxa de fechamento</div></div><div class="result-item"><div class="ri-val">'+moeda(perda)+'</div><div class="ri-label">Valor em aberto</div></div>';$('#diagGrid').innerHTML=grid;$('#diagVerdict').innerHTML='<span class="score-card '+cls+'">Gargalo provável: '+gargalo+'</span><p style="font-size:13px;color:var(--c-body);margin-top:10px">'+texto+'</p>';$('#diagResult').classList.add('show');var share='Meu diagnóstico de atendimento:\nTaxa de proposta: '+taxaProp.toFixed(1)+'%\nTaxa de fechamento: '+taxaFech.toFixed(1)+'%\nGargalo provável: '+gargalo+'\n\nGuia: '+location.href;var s=$('#diagShare');if(s){s.href='https://wa.me/?text='+encodeURIComponent(share);s.style.display='inline-flex'}showToast('Diagnóstico calculado com sucesso')})}
       function updateAction(){var total=$$('#actionChecklist li').length;var checked=$$('#actionChecklist li.checked').length;var pct=total?Math.round(checked/total*100):0;var fill=$('#actionFill'), num=$('#actionPct'), res=$('#actionResult');if(fill)fill.style.width=pct+'%';if(num)num.textContent=checked+'/'+total;if(res){res.classList.add('show');var msg='Comece pela centralização das oportunidades. O resto depende de enxergar tudo em um só lugar.';var cls='score-low';if(checked>=3){msg='Você já tem uma base mínima. O próximo passo é criar rotina semanal de revisão.';cls='score-med'}if(checked>=6){msg='Você está perto de um sistema. Agora vale desenhar governança, dados e IA no fluxo.';cls='score-high'}res.innerHTML='<span class="score-card '+cls+'">'+pct+'% de implantação</span><p style="font-size:13px;color:var(--c-body);margin-top:10px">'+msg+'</p>'}if(checked===total&&total>0)showToast('Checklist completo — você já tem um primeiro ciclo de implantação')}
