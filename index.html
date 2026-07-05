@@ -147,6 +147,35 @@ body{overflow-x:hidden;touch-action:manipulation;-webkit-tap-highlight-color:rgb
   <link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">  <!-- /SI mandatory assets -->
 <style id="si-ai-agentic-style">
+/* SI solutions lab styles start */
+.skip-link:focus:not(:focus-visible){transform:translateY(-180%)!important}
+.si-solutions-lab{position:relative;z-index:2;margin:34px auto 48px;width:min(100% - 32px,1120px);border:1px solid rgba(226,192,116,.24);border-radius:8px;background:linear-gradient(135deg,rgba(9,13,18,.97),rgba(18,23,27,.95));box-shadow:0 26px 74px rgba(0,0,0,.32);overflow:hidden}
+.si-solutions-lab:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(226,192,116,.13),transparent 38%,rgba(83,191,178,.12));pointer-events:none}
+.si-solutions-inner{position:relative;padding:42px}
+.si-solutions-eyebrow{display:inline-flex;align-items:center;gap:8px;margin-bottom:14px;padding:7px 11px;border:1px solid rgba(226,192,116,.28);border-radius:999px;background:rgba(226,192,116,.08);font:800 10px/1.2 "JetBrains Mono",monospace;letter-spacing:.12em;text-transform:uppercase;color:#e8c878}
+.si-solutions-title{margin:0 0 12px;font-family:"Sora","DM Sans",sans-serif;font-size:36px;line-height:1.08;letter-spacing:0;color:#f7f1df;text-wrap:balance}
+.si-solutions-lead{margin:0;max-width:850px;color:#d8d1bf;font-size:17px;line-height:1.7}
+.si-solution-flow{display:grid;grid-template-columns:1fr 44px 1fr 44px 1fr;align-items:stretch;gap:10px;margin:26px 0 22px}
+.si-flow-step{min-height:74px;border:1px solid rgba(255,255,255,.1);border-radius:8px;background:rgba(255,255,255,.045);padding:14px;display:flex;align-items:center;gap:10px;color:#f0eadb;font:800 13px/1.35 "Sora","DM Sans",sans-serif}
+.si-flow-step svg{width:22px;height:22px;flex:0 0 auto;stroke:#72d6ca;stroke-width:1.8;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.si-flow-arrow{display:grid;place-items:center;color:#e8c878}
+.si-flow-arrow svg{width:24px;height:24px;stroke:currentColor;stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.si-solution-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.si-solution-card{min-height:178px;border:1px solid rgba(255,255,255,.11);border-radius:8px;background:rgba(255,255,255,.05);padding:16px;display:flex;flex-direction:column;gap:10px}
+.si-solution-icon{width:34px;height:34px;border:1px solid rgba(114,214,202,.32);border-radius:8px;background:rgba(114,214,202,.08);display:grid;place-items:center;color:#72d6ca}
+.si-solution-icon svg{width:19px;height:19px;stroke:currentColor;stroke-width:1.8;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.si-solution-card h3{margin:0;color:#efcf78;font-family:"Sora","DM Sans",sans-serif;font-size:14px;line-height:1.28;letter-spacing:0}
+.si-solution-card p{margin:0;color:#c8c1ae;font-size:13px;line-height:1.55}
+.si-solution-proof{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:18px 0}
+.si-solution-proof span{border:1px solid rgba(83,191,178,.2);border-radius:8px;background:rgba(83,191,178,.06);padding:12px 13px;color:#dcd4bf;font-size:12.5px;line-height:1.45}
+.si-solution-cta-row{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;margin-top:18px;border-top:1px solid rgba(255,255,255,.09);padding-top:18px}
+.si-solution-cta-copy{max-width:640px;color:#a9a18f;font-size:13px;line-height:1.55}
+.si-solution-cta{display:inline-flex;align-items:center;gap:9px;min-height:44px;padding:12px 16px;border-radius:8px;background:#e8c878;color:#111318!important;text-decoration:none;font:900 13px/1 "Sora","DM Sans",sans-serif;box-shadow:0 12px 32px rgba(232,200,120,.18)}
+.si-solution-cta svg{width:16px;height:16px;stroke:currentColor;stroke-width:2.2;fill:none;stroke-linecap:round;stroke-linejoin:round}
+@media(max-width:900px){.si-solutions-inner{padding:30px 22px}.si-solutions-title{font-size:30px}.si-solution-flow{grid-template-columns:1fr}.si-flow-arrow{min-height:16px;transform:rotate(90deg)}.si-solution-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.si-solution-proof{grid-template-columns:1fr}}
+@media(max-width:560px){.si-solutions-lab{width:min(100% - 24px,1120px);margin:26px auto 36px}.si-solutions-inner{padding:24px 16px}.si-solutions-eyebrow{font-size:9px;border-radius:8px;white-space:normal}.si-solutions-title{font-size:25px}.si-solutions-lead{font-size:15px}.si-solution-grid{grid-template-columns:1fr}.si-solution-card{min-height:auto}.si-solution-cta{width:100%;justify-content:center;text-align:center}}
+/* SI solutions lab styles end */
+
 .si-agentic-upgrade{position:relative;z-index:2;margin:clamp(26px,5vw,54px) auto;max-width:1120px;width:min(100% - 32px,1120px);border:1px solid rgba(226,192,116,.22);border-radius:8px;background:linear-gradient(135deg,rgba(11,13,18,.96),rgba(28,24,15,.94));box-shadow:0 24px 80px rgba(0,0,0,.34);overflow:hidden}
 .si-agentic-upgrade:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(226,192,116,.16),transparent 34%,rgba(83,191,178,.09));pointer-events:none}
 .si-agentic-inner{position:relative;padding:clamp(24px,4.6vw,46px)}
@@ -240,6 +269,37 @@ body{overflow-x:hidden;touch-action:manipulation;-webkit-tap-highlight-color:rgb
     <p class="si-agentic-note">Atualizado em julho de 2026: agentes aqui significam fluxos com estado, ferramentas, handoffs, guardrails, evals e auditoria. Não é prompt solto, não é chatbot decorativo.</p>
   </div>
 </section>
+<!-- SI solutions lab start -->
+<section class="si-solutions-lab" id="solucoes-ia-implementaveis" aria-labelledby="si-solutions-title">
+  <div class="si-solutions-inner">
+    <div class="si-solutions-eyebrow">Soluções implementáveis - comercial jurídico</div>
+    <h2 class="si-solutions-title" id="si-solutions-title">O que este guia pode virar dentro do seu atendimento</h2>
+    <p class="si-solutions-lead">Depois que o leitor entende o vazamento no WhatsApp, a decisão natural é mapear uma esteira de IA que transforma conversa, indicação e formulário em oportunidade qualificada, proposta e contrato.</p>
+    <div class="si-solution-flow" aria-label="Fluxo de transformação com IA">
+      <div class="si-flow-step"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 5h16v10H8l-4 4V5z"/></svg><span>Mensagem solta</span></div>
+      <div class="si-flow-arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg></div>
+      <div class="si-flow-step"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3l7 4v5c0 5-3 8-7 9-4-1-7-4-7-9V7l7-4z"/><path d="M9 12l2 2 4-5"/></svg><span>Squad de atendimento IA</span></div>
+      <div class="si-flow-arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg></div>
+      <div class="si-flow-step"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 19V5"/><path d="M4 19h16"/><path d="M8 15l3-3 3 2 5-7"/></svg><span>Contrato com trilha</span></div>
+    </div>
+    <div class="si-solution-grid">
+      <article class="si-solution-card"><div class="si-solution-icon"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 6h16M4 12h10M4 18h7"/><path d="M17 14l3 3-3 3"/></svg></div><h3>SDR jurídico omnichannel</h3><p>Qualifica WhatsApp, site, Instagram e indicações, identifica urgência, perfil, area e fit antes de acionar o humano certo.</p></article>
+      <article class="si-solution-card"><div class="si-solution-icon"><svg aria-hidden="true" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M8 9h8M8 13h5M8 17h7"/></svg></div><h3>Proposta e contrato assistidos</h3><p>Monta escopo, próximos passos, objeções prováveis e minuta comercial com revisão humana e histórico auditavel.</p></article>
+      <article class="si-solution-card"><div class="si-solution-icon"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3v18M5 8h14M7 16h10"/><path d="M8 4l-3 4 3 4M16 4l3 4-3 4"/></svg></div><h3>CRM de confiança</h3><p>Atualiza origem, etapa, SLA, responsável, motivo de perda e próxima ação sem depender de memoria ou planilha solta.</p></article>
+      <article class="si-solution-card"><div class="si-solution-icon"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12l4 4L19 6"/><path d="M4 20h16"/></svg></div><h3>Nurturing pós-contato</h3><p>Reaquece leads frios e indecisos com mensagens consultivas, timing adequado e prova de autoridade.</p></article>
+    </div>
+    <div class="si-solution-proof" aria-label="Garantias de implementação">
+      <span><strong>PoC orientada por ROI:</strong> começa por uma rotina que reduz perda, retrabalho ou atraso visível.</span>
+      <span><strong>Humano no loop:</strong> aprovações e escalonamentos onde existe risco jurídico, comercial ou reputacional.</span>
+      <span><strong>Confiança verificável:</strong> fontes, logs, permissões, testes e métricas antes de escalar a automação.</span>
+    </div>
+    <div class="si-solution-cta-row">
+      <div class="si-solution-cta-copy">A Super Inteligênc[IA] pode transformar esse mapa em agentes, fluxos, dashboards e automações sob medida para a sua operação, mantendo governança e revisão humana onde importa.</div>
+      <a class="si-solution-cta" href="https://wa.me/message/NSPS5ULND5FNP1" rel="noopener" target="_blank">Diagnosticar meu atendimento <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg></a>
+    </div>
+  </div>
+</section>
+<!-- SI solutions lab end -->
 
 <section class="reveal" style="padding:0 0 24px;margin-top:-8px">
 <div class="wrap">
@@ -421,10 +481,3 @@ body{overflow-x:hidden;touch-action:manipulation;-webkit-tap-highlight-color:rgb
   </script>
 </body>
 </html>
-
-
-
-
-
-
-
